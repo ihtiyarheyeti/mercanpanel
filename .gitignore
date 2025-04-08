@@ -1,0 +1,85 @@
+# XAMPP, PHP, Composer ve IDE dosyaları
+/vendor/
+/node_modules/
+composer.lock
+/config/database.php
+.idea/
+.vscode/
+
+# Geçici dosyalar
+*.log
+*.cache
+*.tmp
+.sass-cache/
+logs/
+temp/
+error.log
+access.log
+
+# Yedek dosyalar
+*.bak
+*.swp
+*~
+.\#*
+\#*
+
+# Çalışma zamanı dosyaları
+.env
+.env.local
+.env.*.local
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE ve Editör Dosyaları
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Geçici Dosyalar
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Sistem Dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PHP
+vendor/
+composer.lock
+
+# Yükleme Klasörleri
+uploads/*
+!uploads/.htaccess
+!uploads/index.php
+
+# Yedekleme Dosyaları
+backups/*
+!backups/.htaccess
+!backups/index.php
+
+# Log Dosyaları
+logs/*
+!logs/.htaccess
+!logs/index.php
+*.log
+
+# Yerel Konfigürasyon
+config/database.local.php
+
+# Derlenen Dosyalar
+*.sass-cache
+*.css.map
+*.js.map
+node_modules/
+
+# Diğer
+.env
+.env.local
+.env.*.local 

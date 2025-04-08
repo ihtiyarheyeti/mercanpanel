@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /mercanpanel/
+
+# Dosya veya dizin değilse
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tüm istekleri index.php'ye yönlendir
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# PHP hata raporlamasını aç
+php_flag display_errors on
+php_value error_reporting E_ALL
+
+# Hata loglamayı etkinleştir
+php_flag log_errors on
+php_value error_log "C:/xampp/htdocs/mercanpanel/error.log" 
