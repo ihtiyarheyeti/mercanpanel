@@ -1,0 +1,26 @@
+{
+    "name": "mercan/panel",
+    "description": "Mercan Panel - Admin Control Panel",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "pragmarx/google2fa": "^8.0",
+        "phpmailer/phpmailer": "^6.8",
+        "intervention/image": "^2.7",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mercan",
+            "email": "info@mercan.com"
+        }
+    ],
+    "minimum-stability": "stable"
+} 

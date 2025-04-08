@@ -1,0 +1,23 @@
+# Dizin listesini devre dışı bırak
+Options -Indexes
+
+# PHP dosyalarının çalıştırılmasını engelle
+<FilesMatch "\.(?i:php)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# İzin verilen dosya uzantıları
+<FilesMatch "\.(?i:jpe?g|png|gif|pdf|docx?|xlsx?|pptx?|zip|rar|txt)$">
+  Order Deny,Allow
+  Allow from all
+</FilesMatch>
+
+# Maximum file upload size
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+
+# Güvenlik başlıkları
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule> 

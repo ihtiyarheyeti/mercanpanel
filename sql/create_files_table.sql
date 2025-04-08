@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `files` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `user_id` int(11) NOT NULL,
+    `filename` varchar(255) NOT NULL,
+    `original_filename` varchar(255) NOT NULL,
+    `file_path` varchar(255) NOT NULL,
+    `file_size` int(11) NOT NULL,
+    `file_type` varchar(50) NOT NULL,
+    `category` varchar(50) DEFAULT NULL,
+    `description` text DEFAULT NULL,
+    `tags` varchar(255) DEFAULT NULL,
+    `is_public` tinyint(1) DEFAULT 0,
+    `download_count` int(11) DEFAULT 0,
+    `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`),
+    KEY `user_id` (`user_id`),
+    KEY `category` (`category`),
+    KEY `is_public` (`is_public`),
+    FULLTEXT KEY `search` (`original_filename`, `description`, `tags`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 

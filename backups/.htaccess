@@ -1,0 +1,6 @@
+# Tüm erişimleri engelle
+Order Deny,Allow
+Deny from all
+
+# Dizin listesini devre dışı bırak
+Options -Indexes 

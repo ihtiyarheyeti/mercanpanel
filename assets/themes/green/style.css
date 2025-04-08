@@ -1,0 +1,70 @@
+/* Green Tema */
+:root {
+    --primary-color: #047857;
+    --secondary-color: #059669;
+    --danger-color: #b91c1c;
+    --text-color: #064e3b;
+    --bg-color: #f0fdf4;
+    --card-bg: #ffffff;
+    --border-color: #bbf7d0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.login-page {
+    background: linear-gradient(135deg, #065f46, #047857);
+}
+
+.login-container {
+    background: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background-color: #ffffff;
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    background-color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+.data-table {
+    background: var(--card-bg);
+}
+
+.data-table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.data-table tr:hover {
+    background-color: #f0fdf4;
+}
+
+.card {
+    background: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+    background-color: #f0fdf4;
+    color: #047857;
+    border-color: #bbf7d0;
+}
+
+.alert-danger {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border-color: #fecaca;
+} 
+ 
